@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Colour Change</title>
+</head>
+<body style="text-align: center;" id="back">
+    <button style="border-radius: 20px;font-family: cursive;font-size: 50px;color: #3ca7ff;background-color: rgb(23, 0, 59);" onclick="changecol()">Change Colour</button><br>
+    <label style="color: #00505a;font-size: 35px;font-family: cursive;">Colour : </label><br><br>
+    <label id="col" style="color: #00505a;font-size: 50px;font-family: cursive;">white</label>
+
+    <script>
+        i=0
+    function changecol(){
+         var colors=["red","blue","green","yellow","magenta","pink","orange","black","gold","violet","brown"]
+        document.body.style.backgroundColor=colors[i];
+        document.getElementById("col").innerHTML=colors[i]
+        i++;
+        if (i>=colors.length)
+        {i=0;}
+    }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
