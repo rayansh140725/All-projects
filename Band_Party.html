@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+     img{
+        height: 300px;width: 300px;
+     }
+     body{
+        text-align: center;
+     }
+     h1{
+        font-family: cursive;color: rgb(255, 238, 0);font-size: 50px;
+     }
+     div{
+        border: 5px solid yellow;border-radius: 50px;
+     }
+     label{
+font-family: cursive;color: rgb(255, 238, 0);font-size: 30px;
+     }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Party</title>
+</head>
+<body>
+    <h1>Band Party</h1><br><br>
+   <div><img src="Drum.png" onclick="Drum()"><label>Drum</label>
+   <img src="3drum.png"onclick="thdrum()"><label>3 Drums</label>
+   <img src="Guitar.png" onclick="Guitar()"><label>Guitar</label>
+   <img src="Trophet.png" onclick="Tro()"><label>Trumpet</label>
+   <img src="Piano.png" onclick="Piano()"><label>Piano</label></div>
+<audio src="" id="a1"></audio>
+   <script>
+const player=document.getElementById("a1");
+function Drum(){
+    player.src="https://coddy.in/sound/Drum11.mp3";
+    player.play();
+    player.volume=0.3;
+}
+function thdrum(){
+    player.src="https://coddy.in/sound/DrumFunky.mp3";
+    player.play();
+    player.volume=0.3;
+}
+function Guitar(){
+    player.src="https://coddy.in/sound/GuitarChords1.mp3";
+    player.play();
+    player.volume=0.3;
+}
+function Tro(){
+    player.src="https://coddy.in/sound/Trumpet2.mp3";
+    player.play();
+    player.volume=0.3;
+}
+function Piano(){
+    player.src="https://coddy.in/sound/EmotionalPiano.mp3";
+    player.play();
+    player.volume=0.3;
+}
+
+
+   </script>
+</body>
+</html>
