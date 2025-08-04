@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Style>
+        body{
+            text-align: center;background-image: url(https://static.vecteezy.com/system/resources/previews/000/695/231/original/seamless-blue-mathematical-symbol-pattern-background-vector.jpg);
+        }
+        label{
+            color: rgb(10, 1, 51);font-size: 50px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: bolder;
+        }
+        button{
+            background-color: rgb(0, 255, 34);height: 50px;width:250px;font-weight: bold;font-size: 30px;color: rgb(255, 0, 0);font-family:'Times New Roman', Times, serif;
+        }
+        input{
+            text-align: center;color: rgb(201, 0, 184);font-size: 30px;
+        }
+                    </Style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+</head>
+<body >
+    <H1 style="font-size: 50px;color: rgb(5, 0, 49);font-family: cursive;">Mathematical Calculator</H1>
+    <label>First Number</label><br>
+    <input type="text" id="firsttext">
+    <hr>
+       <label>Second Number</label><br>
+    <input type="text" id="secondtext">
+    <hr>
+    <button onclick="add()">Addition</button>
+    <button onclick="subtract()">Subtraction</button>
+    <button onclick="multiply()">Multiplication</button>
+    <button onclick="divide()">Division</button><br>
+    <label id="ans">0</label>
+
+    <script>
+        function add(){
+            var num1=parseFloat(document.getElementById("firsttext").value);
+              var num2=parseFloat(document.getElementById("secondtext").value);
+              var sum=num1+num2;
+              document.getElementById("ans").innerHTML=sum;
+        }
+        function subtract(){
+                var num1=parseFloat(document.getElementById("firsttext").value);
+              var num2=parseFloat(document.getElementById("secondtext").value);
+              var sub=num1-num2;
+              document.getElementById("ans").innerHTML=sub;
+        }
+         function multiply(){
+                var num1=parseFloat(document.getElementById("firsttext").value);
+              var num2=parseFloat(document.getElementById("secondtext").value);
+              var sub=num1*num2;
+              document.getElementById("ans").innerHTML=sub;
+        }
+        function divide(){
+                var num1=parseFloat(document.getElementById("firsttext").value);
+              var num2=parseFloat(document.getElementById("secondtext").value);
+              var sub=num1/num2;
+              document.getElementById("ans").innerHTML=sub;
+        }
+        
+    </script>
+</body>
+</html>

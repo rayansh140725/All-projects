@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{text-align: center;}
+        button{width: 300px;font-size: 50px;font-weight: bold;/*color: blueviolet;background-color: rgb(10, 192, 192);*/}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On & Off</title>
+</head>
+<body >
+    <img src="https://i.postimg.cc/6QyTynzr/bulb-on.png" height="600px" id="onbulb"><br>
+    <button id="bulb1" onclick="bulbon()">On</button>
+    <button id="bulb2" onclick="bulboff()">Off</button>
+    <script>
+function bulbon(){
+    document.getElementById("onbulb").src="https://i.postimg.cc/6QyTynzr/bulb-on.png";
+    document.body.style.background="red";
+     document.getElementById("bulb1").style.backgroundColor="blue";
+}
+    
+function bulboff(){
+    document.getElementById("onbulb").src="https://i.postimg.cc/KjK1wL3c/bulb-off.png";
+    document.body.style.background="white";
+    document.getElementById("bulb2").style.backgroundColor="red";
+}
+    </script>
+</body>
+</htm

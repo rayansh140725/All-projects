@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: lightgreen;text-align: center;
+        }
+        img{
+            height:500px;border:9px solid brown  ;border-radius: 10px;width: 500px;
+        }
+        button{
+            font-size: 50px;color: burlywood;font-family: cursive;background-color: darkred;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Nature</title>
+</head>
+<body>
+    <audio src="Sound.mp3" controls ></audio>
+    <h1 style="color: green;font-size: 55px;font-family: cursive;font-weight: bold;" id="head">Save Trees</h1>
+    <h2 style="color: darkgreen;font-size: 40px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">5 reasons to Save trees are</h2>
+    <img src="https://cdn.wallpapersafari.com/1/49/LcprYi.jpg" id="treepic"><br>
+    <button onclick="next()">Next</button>
+
+    <script>
+    var T=0
+    function next(){
+    var reasons=["Give Oxygen","Protect us From Sun heat","Provide Fruits & Vegetables","Provides Place for Birds to Make Nest","Helps to Pevent Soil Erosion "];
+    var images=["oxygen.png","protectsun.png","https://www.givemetrees.org/ckfinder/userfiles/files/mango%20tree.jpg","https://images.unsplash.com/photo-1583987276728-0615ed77d0f3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlyZHMlMjBuZXN0fGVufDB8fDB8fHww","https://www.pleaseconserve.com/wp-content/uploads/shutterstock_63001576.jpg"]
+    document.getElementById("head").innerHTML=reasons[T];
+    document.getElementById("treepic").src=images[T];
+    T++;
+    if(T>=reasons.length){
+        T=0;
+    }}
+    </script>
+</body>
+</html>

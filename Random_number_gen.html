@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       body{
+        background-color: rgb(67, 64, 255);text-align: center;
+       } 
+       button{
+        border-radius: 30px;background-color: rgb(0, 1, 44);color: rgb(212, 166, 255);font-size: 40px;font-family: cursive;height: 50px;width: 190px;
+       }
+       input{height: 30px;width: 200px;background-color: rgb(212, 166, 255);border-radius: 30px;color: rgb(0, 1, 44);font-size: 40px;
+    }
+    label{
+        border-radius: 30px;
+    }
+    h1{
+        color: rgb(11, 0, 36);font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: bold;font-style: italic;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+</head>
+<body>
+    <h1>Random Number Generator</h1><br><br><br>
+    <label style="font-family: cursive;color: rgb(0, 1, 44);font-size: 30px;background-color: rgb(212, 166, 255) ">Min  </label>
+    <input type="text" id="Min"><br><br>
+    <label style="font-family: cursive;color:rgb(0, 1, 44) ;font-size: 30px;background-color: rgb(212, 166, 255)">Max  </label>
+    <input type="text" id="Max"><br><br>
+    <button onclick="gen()" >Generate</button><br>
+    <label style=" color: rgb(212, 166, 255);font-size: 40px;font-family: cursive;height: 50px;width: 190px;" id="ans">=0</label>
+     <script>
+    function gen(){
+        var min=parseInt(document.getElementById("Min").value);
+        var max=parseInt(document.getElementById("Max").value);
+        var result=parseInt(Math.random()*(max-min)+min)
+        document.getElementById("ans").innerHTML=result
+    }
+</script>
+</body>
+</html>

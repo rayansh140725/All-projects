@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            text-align: center;background-image: url(http://www.pixelstalk.net/wp-content/uploads/2016/10/Download-HD-Black-Galaxy-Pictures.jpg);
+        }
+        button{
+            width: 140px;height: 50px;padding: 20px;margin: 20px;font-weight: bold;font-size: 30px;text-align: center;color: aliceblue;background-color: black;
+        }
+        img{
+            height: 400px;width: 400px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+</head>
+<body>
+    <h1 id="Planethead" style="color: rgb(255, 255, 255);font-size: 60px;font-family: cursive;">Planets</h1>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/dbwrfyf-3ad67c12-bf02-4231-bed9-fbb6f2b00ba5.png/v1/fill/w_900,h_900,strp/sun_on_a_transparent_background__by_prussiaart_dbwrfyf-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvMjVkNDUwMTQtOGNjMy00Yzk4LWIwMmMtNWEwY2YzYTU1ZGRkXC9kYndyZnlmLTNhZDY3YzEyLWJmMDItNDIzMS1iZWQ5LWZiYjZmMmIwMGJhNS5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.iosIdwUZ5hFlqY7tTU35rkr2gKrVC5QbvtYgvjySbog" id="Sunpic"><br>
+  <button onclick="Mercury()">Mercury</button>
+   <button onclick="Venus()">Venus</button>
+    <button onclick="Earth()">Earth</button>
+     <button onclick="Mars()">Mars</button>
+      <button onclick="Jupiter()">Jupiter</button>
+       <button onclick="Saturn()">Saturn</button>
+        <button onclick="Uranus()">Uranus</button>
+         <button onclick="Neptune()">Neptune</button>
+
+         <script>
+function Mercury(){
+    document.getElementById("Sunpic").src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/AW_Mercury_ladprw.jpg";
+    document.getElementById("Planethead").innerHTML="Mercury";
+}
+function Venus(){
+    document.getElementById("Sunpic").src="Venus.png";
+    document.getElementById("Planethead").innerHTML="Venus";
+}
+function Earth(){
+    document.getElementById("Sunpic").src="Earth.png";
+    document.getElementById("Planethead").innerHTML="Earth";
+}
+function Mars(){
+    document.getElementById("Sunpic").src="Mars.png";
+    document.getElementById("Planethead").innerHTML="Mars";
+}
+function Jupiter(){
+    document.getElementById("Sunpic").src="Jupiter.png";
+    document.getElementById("Planethead").innerHTML="Jupiter";
+}
+function Saturn(){
+    document.getElementById("Sunpic").src="Saturn.png";
+    document.getElementById("Planethead").innerHTML="Saturn";
+}
+function Uranus(){
+    document.getElementById("Sunpic").src="Uranus.png";
+    document.getElementById("Planethead").innerHTML="Uranus";
+}
+function Neptune(){
+    document.getElementById("Sunpic").src="Neptune.png";
+    document.getElementById("Planethead").innerHTML="Neptune";
+}
+ </script>
+</body>
+</html>

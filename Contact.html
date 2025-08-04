@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Information</title>
+    <style>
+        table{border: 2px solid rgb(23, 149, 153);
+            width: 70%;}
+            td{padding-left: 30px;font-weight: bold;font-size: 25px;color: rgb(0, 69, 126);}
+            input{color: rgb(191, 191, 255);font-size: 20px;background-color: rgb(12, 72, 139);}
+            textarea{background-color: rgb(12, 72, 139);color: rgb(191, 191, 255);font-size: 20px}
+            select{background-color: rgb(12, 72, 139);color: rgb(140, 203, 255);font-size: 20px}
+    </style>
+</head>
+<body style="background-color: rgb(23, 149, 153);">
+    <h1 style="background-color: rgb(163, 203, 255);color: rgb(9, 63, 16);text-align: center;font-size: 50px;">Emergency Contact Information</h1>
+    <form>
+    <table>
+    <tr>
+       <td><label>First Name :</label></td>
+        <td><input type="text" id="i1" required></td>
+       <td><label>Emergency Contact Info :</label></td>
+       <td></td>
+    </tr>
+    <tr>
+        <td><label>Last Name :</label></td>
+        <td><input type="text" id="i2" required></td>
+       <td><label>Name</label></td>
+       <td><input type="text" id="i3" required></td>
+    </tr>
+    <tr>
+       <td><label>Gender:</label></td>
+        <td><select id="gen" name="gender">
+    <option id="male1">Man</option>
+    <option id="woman1">Woman</option>
+    </select></td>
+    <td><label>Relationship</label></td>
+    <td><input type="text" id="i4"></td>
+    </tr>
+    <tr>
+        <td><label>Date Of Birth:</label></td>
+        <td><input type="date" id="i5"required></td>
+        <td><label>Adress:</label></td>
+<td>
+    <textarea rows="2" cols="20"></textarea>
+</td>
+    </tr>
+    <tr>
+<td><label>Medical Information:</label></td>
+<td></td>
+<td><label>City:</label></td>
+<td><input type="text" id="i6"></td>
+</tr>
+<tr>
+    <td><label>Hospital Preferance:</label></td>
+    <td><input type="text" id="i7" required></td>
+    <td><label>State:</label></td>
+    <td><input type="text" id="i8" required></td>
+</tr>
+<tr>
+<td><label>Insurance Company:</label></td>
+<td><input type="text" id="i9"></td>
+<td><label>Country:</label></td>
+<td><input type="text" id="i10" required></td>
+</tr>
+<tr>
+<td><label>Policy Number:</label></td>
+<td><input type="text" id="i11" required pattern="[0-9]{14-16}"></td>
+<td><label>Home Phone:</label></td>
+<td><input type="text" id="i12" required pattern="[0-9]{10}"></td>
+</tr>
+<tr>
+    <td><label>Physician's Name:</label></td>
+<td><input type="text" id="i13"></td>
+<td><label>Work Phone:</label></td>
+<td><input type="text" id="i14" pattern="[0-9]{10}"></td>
+</tr><
+<tr>
+    <td><label>Phone Number:</label></td>
+<td><input type="text" id="i15" required pattern="[0-9]{10}"></td>
+</tr>
+<tr>
+<td><label>Allergies [If any]:</label></td>
+<td><textarea rows="4" cols="40" minlength="10" maxlength="50"></textarea></td>
+<td><label>Visitors Allowed:</label></td>
+<td><input type="number" id="i16" min="0" max="5"></td>
+</tr>
+<tr style="text-align: center;">
+    <td colspan="4"><input type="submit"><input type="reset"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
